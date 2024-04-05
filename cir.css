@@ -1,7 +1,16 @@
+
+.progress{
+  padding-top: 30px;
+}
+
 .circular{
     height: 100px;
     width: 100px;
     position: relative;
+    /* display: none; */
+    display: flex;
+    margin: auto;
+    align-items: center;
   }
   .circular .inner, .circular .outer, .circular .circle{
     position: absolute;
