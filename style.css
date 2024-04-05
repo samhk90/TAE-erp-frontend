@@ -353,7 +353,7 @@ body {
 
 
 #content main .box-info li .icons{
-	padding-top: 40px;
+	padding-top: 25px;
 	display: flex;
 	align-items: center;
 	margin: auto;
@@ -364,16 +364,19 @@ body {
 }
 
 .icons .count{
-	display: grid;
-	height: 80px;
-	width: 70px;
-	font-size: 14px;
-	/* line-height: 0; */
+	display: flex;
+	/* margin: auto; */
+	align-items: center;
+	justify-content: center;
+	height: 55px;
+	width: 55px;
+	padding: 30px;
 	text-align: center;
 	border-radius: 5px;
 }
-.icons .count p{
-	font-weight: 500;
+.icons .count h3{
+	font-weight: 700;
+	font-size: 14px;
 }
 #content main .box-info li:nth-child(1) .bx {
 	background: #CFE8FF;
