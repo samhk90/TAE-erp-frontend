@@ -3,16 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<link rel="stylesheet" href="cir.css">
 	<!-- Boxicons -->
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<!-- My CSS -->
 	<link rel="stylesheet" href="style.css">
-
-	<title>TAE</title>
+<title>TAE</title>
 </head>
 <body>
-	
 
 
 	<!-- SIDEBAR -->
@@ -131,34 +129,43 @@
 				
 			<ul class="box-info">
 				<li>
-					<div>Heading</div>
-					<div class="circular">
-						<div class="inner"></div>
-						<div class="outer"></div>
-						<div class="numb">
-						   0%
-						</div>
-						<div class="circle">
-						   <div class="dot">
-							  <span></span>
-						   </div>
-						   <div class="bar left">
-							  <div class="progress"></div>
-						   </div>
-						   <div class="bar right">
-							  <div class="progress"></div>
-						   </div>
-						</div>
-					 </div>
+					<!-- <h2>Porg</h2> -->
+					<div class="progress">
+						<div class="circular">
+							<div class="inner"></div>
+							<div class="outer"></div>
+							<div class="numb">
+							   0%
+							</div>
+							<div class="circle">
+							   <div class="dot">
+								  <span></span>
+							   </div>
+							   <div class="bar left">
+								  <div class="progress"></div>
+							   </div>
+							   <div class="bar right">
+								  <div class="progress"></div>
+							   </div>
+							</div>
+						 </div>
+					</div>
+					<div class="icons">
 					
-					
+					<h4 class="bx" style="background-color:rgba(255, 0, 0, 0.724);">8</h4>
+					<h4 class="bx" style="background-color:yellow">8</h4>
+					<h4 class="bx" style="background-color:rgb(8, 242, 8)">8</h4>
+					<h4 class="bx" style="background-color:rgb(0, 191, 255)">8</h4>
+				</div>
+				
+				</li>
+				<li>
+					<i class='bx bxs-group' ></i>
 					
 				</li>
 				<li>
+					<i class='bx bxs-dollar-circle' ></i>
 					
-				</li>
-				<li>
-		
 				</li>
 			</ul>
 		</main>
@@ -171,7 +178,7 @@
 	<script src="script.js"></script>
 	<script>
 		const numb = document.querySelector(".numb");
-		let counter = 1;
+		let counter = 0;
 		setInterval(()=>{
 		  if(counter == 100){
 			clearInterval();
@@ -179,7 +186,7 @@
 			counter+=1;
 			numb.textContent = counter + "%";
 		  }
-		}, 75);
+		}, 80);
 	 </script>
 </body>
 </html>
