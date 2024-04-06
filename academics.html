@@ -23,44 +23,44 @@
 		</a>
 		<ul class="side-menu top">
 			<li class="active">
-				<a href="#">
+				<a href="index.html">
 					<i class='bx bxs-dashboard'></i>
 					<span class="text">Dashboard</span>
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="academics.html">
 					<i class='bx bxs-shopping-bag-alt'></i>
 					<span class="text">Academics</span>
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="notices.html">
 					<i class='bx bxs-doughnut-chart'></i>
 					<span class="text">Notices</span>
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="timetable.html">
 					<i class='bx bxs-message-dots'></i>
 					<span class="text">Time Table</span>
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="leaves.html">
 					<i class='bx bxs-group'></i>
 					<span class="text">Leaves</span>
 				</a>
 			</li>
 
 			<li>
-				<a href="#">
+				<a href="students.html">
 					<i class='bx bxs-group'></i>
 					<span class="text">Student Info</span>
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="feedback.html">
 					<i class='bx bxs-group'></i>
 					<span class="text">Feedback</span>
 				</a>
@@ -114,15 +114,135 @@
 
 		<!-- MAIN -->
 		<main>
-			<h1>This is academic page</h1>
-		</main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Academics</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Academics</a>
+						</li>
+						<li><i class='bx bx-chevron-right'></i></li>
+						<li>
+							<a class="active" href="#">Attendance</a>
+						</li>
+						<li><i class='bx bx-chevron-right'></i></li>
+						<li>
+							<a class="active" href="#">GreenBook</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<section class="main-course">
+				<h1>My Subjects</h1>
+				<div class="course-box">
+				  <ul>
+					<li class="active">Second Year</li>
+					<li>Third Year</li>
+					<li>Final Year</li>
+				  </ul>
+				  <div class="course">
+					<div class="box">
+					  <h3>HTML</h3>
+					  <p>8 lectures conducted</p>
+					  <button>See Attendance</button>
+					  <i class="fab fa-html5 html"></i>
+					</div>
+					<div class="box">
+					  <h3>CSS</h3>
+					  <p>5 lectures conducted</p>
+					  <button>See Attendance</button>
+					  <i class="fab fa-css3-alt css"></i>
+					</div>
+					<div class="box">
+					  <h3>Practical Labs</h3>
+					  <p>3 labs conducted</p>
+					  <button>See Attendance</button>
+					  <i class="fab fa-js-square js"></i>
+					</div>
+				  </div>
+				</div>
+			  </section>
+			</section>
+
+			<style>
+				/* Courses */
+.main-course{
+  margin-top:20px ;
+  text-transform: capitalize;
+}
+.course-box{
+  width: 100%;
+  height: 300px;
+  padding: 10px 10px 30px 10px;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.course-box ul{
+  list-style: none;
+  display: flex;
+}
+.course-box ul li{
+  margin: 10px;
+  color: gray;
+  cursor: pointer;
+}
+.course-box ul .active{
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+.course-box .course{
+  display: flex;
+}
+.box{
+  width: 33%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background: rgb(235, 233, 233);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.box p{
+  font-size: 12px;
+  margin-top: 5px;
+}
+.box button{
+  background: #000;
+  border: none;
+  color: #fff;
+  padding: 7px 10px;
+  border-radius: 10px;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+.box button:hover{
+  background: rgba(0, 0, 0, 0.842);
+}
+.box i{
+  font-size: 7rem;
+  float: right;
+  margin: -20px 20px 20px 0;
+}
+.html{
+  color: rgb(25, 94, 54);
+}
+.css{
+  color: rgb(104, 179, 35);
+}
+.js{
+  color: rgb(28, 98, 179);
+}
+			</style>
+			
+		</main>	
 
 	</section>
 	<!-- CONTENT -->
 
 
 	<script src="script.js"></script>
-	
+
 </body>
 
 </html>
