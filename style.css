@@ -347,6 +347,21 @@ body {
 .details .date{
 	font-size: 10px;
 }
+.announce{
+	display: grid;
+	gap:10px;
+}
+.announce .info .fas{
+	font-size: 22px;
+	background-color: #00c8ff4f;
+	padding: 5px;
+	border-radius: 5px; 
+	/* rotate: -20deg; */
+	
+}
+.announce .info p{
+	font-size: 10px;
+}
 
 .info .user{
 	display: flex; 
@@ -354,12 +369,6 @@ body {
 	gap: 5px;
 }
 
-.fas {
-	font-size: 22px;
-	background-color: #44c2e4;
-	padding: 5px;
-	border-radius: 5px;
-}
 
 #content main .box-info li .icons{
 	padding-top: 25px;
