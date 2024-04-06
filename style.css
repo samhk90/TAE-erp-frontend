@@ -276,9 +276,6 @@ body {
 	border-radius: 50%;
 	transition: all .3s ease;
 }
-#content nav #switch-mode:checked + .switch-mode::before {
-	left: calc(100% - (25px - 4px) - 2px);
-}
 /* NAVBAR */
 
 
@@ -288,7 +285,7 @@ body {
 /* MAIN */
 #content main {
 	width: 100%;
-	padding: 13px 24px;
+	padding: 1px 15px;
 	font-family: 'Poppins', sans-serif;
 	max-height: calc(100vh - 56px);
 	overflow-y: auto;
@@ -304,7 +301,7 @@ body {
 #content main .head-title .left .breadcrumb {
 	display: flex;
 	align-items: center;
-	grid-gap: 16px;
+	grid-gap: 5px;
 }
 #content main .head-title .left .breadcrumb li {
 	color: #342E37;
@@ -317,27 +314,15 @@ body {
 	color: #3C91E6;
 	pointer-events: unset;
 }
-#content main .head-title .btn-download {
-	height: 36px;
-	padding: 0 16px;
-	border-radius: 36px;
-	background: #3C91E6;
-	color: #F9F9F9;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	grid-gap: 10px;
-	font-weight: 500;
-}
 
 
 
 
 #content main .box-info {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	grid-template-columns: repeat(3, minmax(100px, 1fr));
 	grid-gap: 28px;
-	margin-top: 26px;
+	margin-top: 15px;
 }
 #content main .box-info li {
 	padding: 15px;
