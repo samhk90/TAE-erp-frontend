@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Applying 'Lato' font family to all text elements */
+input{
+    font-family: 'Lato', sans-serif;
+    padding-left: 100px;
+    
+}
+
+
+h2{
+    /* padding: 20px; */
+    text-align: left;
+    color: black;
+}
+
+.card{
+    border-radius: 10px;
+}
+
+/* Styles for form */
+form {
+    margin-top: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="Search"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="Search"]:hover {
+    background-color: #45a049;
+}
+
+/* CSS for arranging fields in rows of three */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+/* CSS for styling the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+/* Styles for card */
+.card {
+    background-color: #ffffff; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    padding: 20px;
+    margin: 20px auto; 
+    max-width: 1500px; 
+}
+
+.search-button {
+    background-color: #007bff; /* Blue color */
+    color: #ffffff; /* White text color */
+    border: none;
+    padding: 10px 20px; 
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+    border-radius: 5px;
+}
+
+.search-button:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+    
+}

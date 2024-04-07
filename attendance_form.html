@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 	<!-- My CSS -->
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="formstyle.css">
 	<title>TAE</title>
 </head>
 
@@ -132,36 +133,70 @@
 					</ul>
 				</div>
 			</div>
-			<section class="main-course">
-				<h1>My Subjects</h1>
-				<div class="course-box">
-				  <ul>
-					<li class="active"> <a href="academics.html">Second Year</a> </li>
-					<li> <a href="academics_te.html">Third Year</a> </li>
-					<li>  <a href="academics_be.html">Final Year</a> </li>
-				  </ul>
-				  <div class="course">
-					<div class="box">
-					  <h3>HTML</h3>
-					  <p>8 lectures conducted</p>
-					 <a href="attendance_form.html">  <button> See Attendance </button></a> 
-					  <i class="fab fa-html5 html"></i>
-					</div>
-					<div class="box">
-					  <h3>CSS</h3>
-					  <p>5 lectures conducted</p>
-					  <a href="attendance_form.html">  <button> See Attendance </button></a>
-					  <i class="fab fa-css3-alt css"></i>
-					</div>
-					<div class="box">
-					  <h3>Practical Labs</h3>
-					  <p>3 labs conducted</p>
-					  <a href="attendance_form.html">  <button> See Attendance </button></a>
-					  <i class="fab fa-js-square js"></i>
-					</div>
-				  </div>
+			<div class="card">  
+				<h2>Attendance Search</h2>
+				<div class="container">
+					<form action="/submit_form" method="post">
+						<div class="row">
+							<div class="column">
+								<label for="load_type">Load Type:</label>
+								<input type="text" id="load type" name="load type" required>
+							</div>
+							<div class="column">
+								<label for="year">Year:</label>
+								<input type="text" id="year" name="year" required>
+							</div>
+							<div class="column">
+								<label for="program">Program:</label>
+								<input type="text" id="program" name="program" required>
+							</div>
+						</div>
+						<div class="row">
+							<div class="column">
+								<label for="div">Division:</label>
+								<input type="text" id="div" name="div" required>
+							</div>
+							<div class="column">
+								<label for="batch">Batch:</label>
+								<input type="text" id="batch" name="batch" required>
+							</div>
+							<div class="column">
+								<label for="course">Course:</label>
+								<input type="text" id="course" name="course" required>
+							</div>
+						</div>
+						<button type="submit" class="search-button">Search</button> 
+					</form>
+					<!-- <div class="search-button-container">
+						<button type="button" class="search-button">Search</button>
+					</div> -->
 				</div>
-			  </section>
+				<div class="card">
+					<table>
+						<tr>
+							<th>Load Type</th>
+							<th>Year</th>
+							<th>Program</th>
+						</tr>
+						<tr>
+							<td>Full Time</td>
+							<td>2023</td>
+							<td>Computer Science</td>
+						</tr>
+						<tr>
+							<td>Full Time</td>
+							<td>2023</td>
+							<td>Computer Science</td>
+						</tr>
+						<tr>
+							<td>Full Time</td>
+							<td>2023</td>
+							<td>Computer Science</td>
+						</tr>
+						<!-- Add more rows as needed -->
+					</table>
+				</div>
+			</div>
 			</section>
 
 			<style>
