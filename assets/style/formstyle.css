@@ -6,8 +6,6 @@ input{
     padding-left: 100px;
     
 }
-
-
 h2{
     /* padding: 20px; */
     text-align: left;
@@ -96,8 +94,18 @@ th {
     transition: background-color 0.3s ease; /* Smooth transition effect */
     border-radius: 5px;
 }
+.view {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background-color: #007bff; /* Blue color */
+    color: #ffffff; /* White text color */
+    border: none;
+    padding: 10px 20px; 
+    border-radius: 5px;
+}
 
-.search-button:hover {
+.search-button:hover , .view:hover{
     background-color: #0056b3; /* Darker blue color on hover */
     
 }

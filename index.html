@@ -4,13 +4,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="cir.css">
+	<link rel="stylesheet" href="/assets/style/progress_bar.css">
 	<!-- Boxicons -->
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 	<!-- My CSS -->
+	<link rel="stylesheet" href="/assets/style/style.css">
+	<link rel="stylesheet" href="/assets/style/mac.css">
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="mac.css">
 	<title>TAE</title>
 </head>
 
@@ -20,7 +21,7 @@
 	<!-- SIDEBAR -->
 	<section id="sidebar">
 		<a href="#" class="brand">
-			<span class="text">TAE</span>
+			<span class="text"><img src="/assets/img/newyear.png" height="100px"alt=""></span>
 		</a>
 		<ul class="side-menu top">
 			<li class="active">
@@ -108,7 +109,7 @@
 			</a>
 
 			<a href="#" class="profile" >
-				<p>Welcome:Userxyz</p>	<img src="img/user.png">
+				<p>Welcome:Userxyz</p>	<img src="/assets/img/user.png">
 			</a>
 		</nav>
 		<!-- NAVBAR -->
@@ -145,9 +146,9 @@
 						</div>
 						<div style="font-size: 12px; font-weight: 600;"><label for="cars">View:</label>
 							<select name="class" style="border: none;">
-								<option value="volvo">Second Year</option>
-								<option value="saab">Third Year</option>
-								<option value="opel">Final Year</option>
+								<option value="second_year">Second Year</option>
+								<option value="third_year">Third Year</option>
+								<option value="final_year">Final Year</option>
 								<option value="audi">None</option>
 							</select>
 						</div>
@@ -157,24 +158,23 @@
 
 
 					<div class="progress">
-						<div class="circular">
-							<div class="inner"></div>
-							<div class="outer"></div>
-							<div class="numb">
-								0%
+						<div class="container">
+							<div class="outer-circle">
+							  <div class="inner-circle">
+								<div id="num"></div>
+							  </div>
 							</div>
-							<div class="circle">
-								<div class="dot">
-									<span></span>
-								</div>
-								<div class="bar left">
-									<div class="progress"></div>
-								</div>
-								<div class="bar right">
-									<div class="progress"></div>
-								</div>
-							</div>
-						</div>
+							<svg>
+							  <circle id="circle" cx="80" cy="80" r="70" />
+							  
+							  <defs>
+								<linearGradient id="circleGradient">
+								  <stop offset="0%" stop-color="#42c2ff" />
+								  <stop offset="100%" stop-color="#00b0ff" />
+								</linearGradient>
+							  </defs>
+							</svg>
+						  </div>
 					</div>
 
 					<div class="icons">
@@ -199,27 +199,27 @@
 					</p>
 					<div class="details">
 						<div class="info">
-							<div class="user"><img src="/img/user.png" alt=""> Bhupendra Jogi</div>
+							<div class="user"><img src="/assets/img/user.png" alt=""> Bhupendra Jogi</div>
 
 							<div class="date">10 <sup>th</sup>April 2024 </div>
 						</div>
 						<div class="info">
-							<div class="user"><img src="/img/user.png" alt=""> Bhupendra Jogi</div>
+							<div class="user"><img src="/assets/img/user.png" alt=""> Bhupendra Jogi</div>
 
 							<p class="date">10 <sup>th</sup>April 2024 </p>
 						</div>
 						<div class="info">
-							<div class="user"><img src="/img/user.png" alt=""> Bhupendra Jogi</div>
+							<div class="user"><img src="/assets/img/user.png" alt=""> Bhupendra Jogi</div>
 
 							<p class="date">10 <sup>th</sup>April 2024 </p>
 						</div>
 						<div class="info">
-							<div class="user"><img src="/img/user.png" alt=""> Bhupendra Jogi</div>
+							<div class="user"><img src="/assets/img/user.png" alt=""> Bhupendra Jogi</div>
 
 							<p class="date">10 <sup>th</sup>April 2024 </p>
 						</div>
 						<div class="info">
-							<div class="user"><img src="/img/user.png" alt=""> Bhupendra Jogi</div>
+							<div class="user"><img src="/assets/img/user.png" alt=""> Bhupendra Jogi</div>
 
 							<p class="date">10 <sup>th</sup>April 2024 </p>
 						</div>
@@ -305,32 +305,32 @@
 					</p>
 					<div class="details">
 						<div class="info">
-							<div class="user"><img src="/img/makar.png" alt="">Makar Sankranti</div>
+							<div class="user"><img src="/assets/img/makar.png" alt="">Makar Sankranti</div>
 
 							<div class="date">10 <sup>th</sup>April 2024 </div>
 						</div>
 						<div class="info">
-							<div class="user"><img src="/img/holi.png" alt=""> Holi</div>
+							<div class="user"><img src="/assets/img/holi.png" alt=""> Holi</div>
 
 							<p class="date">10 <sup>th</sup>April 2024 </p>
 						</div>
 						<div class="info">
-							<div class="user"><img src="/img/rak.png" alt=""> Rakshabandhan</div>
+							<div class="user"><img src="/assets/img/rak.png" alt=""> Rakshabandhan</div>
 
 							<p class="date">10 <sup>th</sup>April 2024 </p>
 						</div>
 						<div class="info">
-							<div class="user"><img src="/img/diwali.png" alt=""> Diwali</div>
+							<div class="user"><img src="/assets/img/diwali.png" alt=""> Diwali</div>
 
 							<p class="date">10 <sup>th</sup>April 2024 </p>
 						</div>
 						<div class="info">
-							<div class="user"><img src="/img/santa.png" alt=""> Christmas</div>
+							<div class="user"><img src="/assets/img/santa.png" alt=""> Christmas</div>
 
 							<p class="date">10 <sup>th</sup>April 2024 </p>
 						</div>
 						<div class="info">
-							<div class="user"><img src="/img/newyear.png" alt=""> New Year</div>
+							<div class="user"><img src="/assets/img/newyear.png" alt=""> New Year</div>
 
 							<p class="date">10 <sup>th</sup>April 2024 </p>
 						</div>
@@ -455,6 +455,7 @@
 	<!-- CONTENT -->
 
 
+	<script src="assets/script/script.js"></script>
 	<script src="script.js"></script>
 	<script>
 		const numb = document.querySelector(".numb");

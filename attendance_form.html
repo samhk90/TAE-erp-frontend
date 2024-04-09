@@ -9,8 +9,8 @@
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 	<!-- My CSS -->
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="formstyle.css">
+	<link rel="stylesheet" href="assets/style/style.css">
+	<link rel="stylesheet" href="assets/style/formstyle.css">
 	<title>TAE</title>
 </head>
 
@@ -128,7 +128,7 @@
 						</li>
 						<li><i class='bx bx-chevron-right'></i></li>
 						<li>
-							<a class="active" href="#">GreenBook</a>
+							<a class="active" href="green.html">GreenBook</a>
 						</li>
 					</ul>
 				</div>
@@ -166,10 +166,9 @@
 							</div>
 						</div>
 						<button type="submit" class="search-button">Search</button> 
+						<button type="submit" class="search-button">Download data</button> 
 					</form>
-					<!-- <div class="search-button-container">
-						<button type="button" class="search-button">Search</button>
-					</div> -->
+					
 				</div>
 				<div class="card">
 					<table>
@@ -177,101 +176,35 @@
 							<th>Load Type</th>
 							<th>Year</th>
 							<th>Program</th>
+							<th>Attendance</th>
+							<th id="view">View</th>
 						</tr>
 						<tr>
 							<td>Full Time</td>
-							<td>2023</td>
+							<td>Second Year</td>
 							<td>Computer Science</td>
+							<td>100%</td>
+							<td ><button class="view">View</button></td>
 						</tr>
 						<tr>
 							<td>Full Time</td>
-							<td>2023</td>
+							<td>Second Year</td>
 							<td>Computer Science</td>
+							<td>100%</td>
+							<td ><button class="view">View</button></td>
 						</tr>
 						<tr>
 							<td>Full Time</td>
-							<td>2023</td>
+							<td>Second Year</td>
 							<td>Computer Science</td>
+							<td>100%</td>
+							<td ><button class="view">View</button></td>
 						</tr>
 						<!-- Add more rows as needed -->
 					</table>
 				</div>
 			</div>
 			</section>
-
-			<style>
-				/* Courses */
-.main-course{
-  margin-top:20px ;
-  text-transform: capitalize;
-}
-.course-box{
-  width: 100%;
-  height: 300px;
-  padding: 10px 10px 30px 10px;
-  margin-top: 10px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
-}
-a{
-	color: black;
-}
-.course-box ul{
-  list-style: none;
-  display: flex;
-}
-.course-box ul li{
-  margin: 10px;
-  color: gray;
-  cursor: pointer;
-}
-.course-box ul .active{
-  color: #000;
-  border-bottom: 1px solid #000;
-}
-.course-box .course{
-  display: flex;
-}
-.box{
-  width: 33%;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 10px;
-  background: rgb(235, 233, 233);
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
-}
-.box p{
-  font-size: 12px;
-  margin-top: 5px;
-}
-.box button{
-  background: #000;
-  border: none;
-  color: #fff;
-  padding: 7px 10px;
-  border-radius: 10px;
-  margin-top: 3rem;
-  cursor: pointer;
-}
-.box button:hover{
-  background: rgba(0, 0, 0, 0.842);
-}
-.box i{
-  font-size: 7rem;
-  float: right;
-  margin: -20px 20px 20px 0;
-}
-.html{
-  color: rgb(25, 94, 54);
-}
-.css{
-  color: rgb(104, 179, 35);
-}
-.js{
-  color: rgb(28, 98, 179);
-}
-			</style>
 			
 		</main>	
 
@@ -279,7 +212,7 @@ a{
 	<!-- CONTENT -->
 
 
-	<script src="script.js"></script>
+	<script src="assets/script/script.js"></script>
 
 </body>
 
