@@ -8,8 +8,9 @@
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 	<!-- My CSS -->
-	<link rel="stylesheet" href="/assets/style/style.css">
-	<link rel="stylesheet" href="/assets/style/mac.css">
+	<link rel="stylesheet" href="assets/style/style.css">
+	<link rel="stylesheet" href="assets/style/notice.css">
+	<link rel="stylesheet" href="assets/style/noticeform.css">
 	<title>TAE</title>
 </head>
 
@@ -107,7 +108,7 @@
 			</a>
 
 			<a href="#" class="profile">
-				<img src="/assets/img/user.png">
+				<img src="assets/img/user.png">
 			</a>
 		</nav>
 		<!-- NAVBAR -->
@@ -116,137 +117,96 @@
 		<main>
 			<div class="head-title">
 				<div class="left">
-					<h1>Academics</h1>
+					<h1>Notice</h1>
 					<ul class="breadcrumb">
 						<li>
-							<a href="#">Academics</a>
+							<a href="#">Notice</a>
 						</li>
 						<li><i class='bx bx-chevron-right'></i></li>
 						<li>
-							<a class="active" href="#">Attendance</a>
+							<a class="active" href="notices.html">published</a>
 						</li>
-						<li><i class='bx bx-chevron-right'></i></li>
-						<li>
-							<a class="active" href="#">GreenBook</a>
-						</li>
+						
 					</ul>
 				</div>
 			</div>
 			<section class="main-course">
-				<h1>My Subjects</h1>
-				<div class="course-box">
-					<ul>
+				
+				<div class="container">
+					<div class="text">Add Notice</div>
+					<form action="#">
+					   <div class="form-row">
+						  <div class="input-data">
+							 <input type="text" required>
+							 <div class="underline"></div>
+							 <label for="">Professor name</label>
+						  </div>
+						  <div class="input-data">
+							 <input type="" required>
+							 <div class="underline"></div>
+							 <label for="">Department</label>
+						  </div>
+					   </div>
+					   <div class="form-row">
+						  <div class="input-data">
+							 <input type="text" required>
+							 <div class="underline"></div>
+							 <label for="">Email Address</label>
+						  </div>
+						  <div class="input-data">
+							 <input type="text" required>
+							 <div class="underline"></div>
+							 <label for="">Notice Title</label>
+						  </div>
+						  
+					   </div>
+					   <div class="form-row">
+						<div class="input-data">
+						   <input type="date" required style="text-align: center;">
+						   <div class="underline"></div>
+						   <label for="">Date</label>
+						</div>
+						<div class="input-data">
+						   <input type="text" required>
+						   <div class="underline"></div>
+						   <label for="">Notice Title</label>
+						</div>
 						
-						<li > <a href="academics.html">Second Year</a> </li>
-						<li class="active"> <a href="academics_te.html">Third Year</a> </li>
-						
-						<li>  <a href="academics_be.html">Final Year</a> </li>
-					  </ul>
-				  <div class="course">
-					<div class="box">
-					  <h3>HTML</h3>
-					  <!-- <p>8 lectures conducted</p>
-					  <button>See Attendance</button>
-					  <i class="fab fa-html5 html"></i>
-					</div>
-					<div class="box">
-					  <h3>CSS</h3> -->
-					  <p>Third Year (5<sup style="text-transform: lowercase;">th</sup> Semester)</p>
-					  <p>5 lectures conducted</p>
-					  <a href="attendance_form.html">  <button> See Attendance </button></a>
-					  <i class="fab fa-css3-alt css"></i>
-					</div>
-					<div class="box">
-					  <h3>Practical Labs</h3>
-					  <p>Second Year (4<sup style="text-transform: lowercase;">th</sup> Semester)</p>
-					  <p>3 labs conducted</p>
-					  <a href="attendance_form.html">  <button> See Attendance </button></a>
-					  <i class="fab fa-js-square js"></i>
-					</div>
-				  </div>
-				</div>
+					 </div>
+					   <div class="form-row">
+						  <div class="input-data textarea">
+							 <textarea rows="8" cols="80" required></textarea>
+							 <br />
+							 <div class="underline"></div>
+							 <label for="">Write your message</label>
+							 <br />
+							 <div class="form-row submit-btn">
+								
+								   
+								   <button type="button" class="sub" onclick="myFunction()">Submit</button>
+								
+							 </div>
+						  </div>
+					   </div>
+					</form>
+				 </div>
+			
 			  </section>
 			</section>
-
-			<style>
-				/* Courses */
-.main-course{
-  margin-top:20px ;
-  text-transform: capitalize;
-}
-.course-box{
-  width: 100%;
-  height: 300px;
-  padding: 10px 10px 30px 10px;
-  margin-top: 10px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
-}
-a{
-	color: black;
-}
-.course-box ul{
-  list-style: none;
-  display: flex;
-}
-.course-box ul li{
-  margin: 10px;
-  color: gray;
-  cursor: pointer;
-}
-.course-box ul .active{
-  color: #000;
-  border-bottom: 1px solid #000;
-}
-.course-box .course{
-  display: flex;
-}
-.box{
-  width: 33%;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 10px;
-  background: rgb(235, 233, 233);
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
-}
-.box p{
-  font-size: 12px;
-  margin-top: 5px;
-}
-.box button{
-  background: #000;
-  border: none;
-  color: #fff;
-  padding: 7px 10px;
-  border-radius: 10px;
-  margin-top: 3rem;
-  cursor: pointer;
-}
-.box button:hover{
-  background: rgba(0, 0, 0, 0.842);
-}
-.box i{
-  font-size: 7rem;
-  float: right;
-  margin: -20px 20px 20px 0;
-}
-.html{
-  color: rgb(25, 94, 54);
-}
-.css{
-  color: rgb(104, 179, 35);
-}
-.js{
-  color: rgb(28, 98, 179);
-}
-			</style>
-			
 		</main>	
 
 	</section>
 	<!-- CONTENT -->
-
+	<script>
+		var now = new Date();
+		var datetime = now.toLocaleString();
+		document.getElementById("datetime").innerHTML = datetime;
+	  </script>
+	   <script>
+        function myFunction() {
+          alert("Notice Updated");
+        }
+        </script>
 
 	<script src="assets/script/script.js"></script>
 
