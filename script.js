@@ -16,7 +16,7 @@ setInterval(() => {
     }
 }, time);
 
-const css = window.document.styleSheets[0];
+const css = window.document.styleSheets[0]; 
 
 const stroke = 440 - (440 * (randomNum / 100));
 

@@ -33,6 +33,15 @@ select {
     border-radius: 4px;
     box-sizing: border-box;
 }
+input[type="date"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 input[type="Search"] {
     background-color: #4CAF50;
     color: white;
@@ -44,6 +53,7 @@ input[type="Search"] {
 input[type="Search"]:hover {
     background-color: #45a049;
 }
+
 
 /* CSS for arranging fields in rows of three */
 .row {
@@ -68,7 +78,7 @@ table {
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
-    text-align: left;
+    text-align: center;
 }
 
 th {
@@ -85,27 +95,32 @@ th {
 }
 
 .search-button {
-    background-color: #007bff; /* Blue color */
-    color: #ffffff; /* White text color */
+    background-color: #007bff; 
+    color: #ffffff; 
     border: none;
     padding: 10px 20px; 
     margin-left: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth transition effect */
+    transition: background-color 0.3s ease; 
     border-radius: 5px;
 }
 .view {
     display: flex;
     margin: auto;
     justify-content: center;
-    background-color: #007bff; /* Blue color */
-    color: #ffffff; /* White text color */
+    background-color: #007bff;
+    color: #ffffff; 
     border: none;
     padding: 10px 20px; 
     border-radius: 5px;
 }
 
 .search-button:hover , .view:hover{
-    background-color: #0056b3; /* Darker blue color on hover */
+    background-color: #0056b3; 
     
+}
+
+input[type="radio"]{
+    height: 14px;
+    width: 20px;
 }
