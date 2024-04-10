@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 	<!-- My CSS -->
 	<link rel="stylesheet" href="assets/style/style.css">
+	<link rel="stylesheet" href="notice.css">
 	<title>TAE</title>
 </head>
 
@@ -123,15 +124,44 @@
 						</li>
 						<li><i class='bx bx-chevron-right'></i></li>
 						<li>
-							<a class="active" href="#">published by me</a>
+							<a class="active" href="#">published</a>
 						</li>
 						
 					</ul>
 				</div>
 			</div>
 			<section class="main-course">
-				<h1>My Subjects</h1>
-				
+				<h1>My Notices</h1>
+				<table class="content-table">
+					<thead>
+					  <tr>
+						<th>Sr. no.</th>
+						<th>Professor</th>
+						<th>Date and Time</th>
+						<th>Notice</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+						<td>1</td>
+						<td>xyz</td>
+						<td><p id="datetime"></p></td>
+						<td>  lorem30 </td>
+					  </tr>
+					  <tr class="active-row">
+						<td>2</td>
+						<td>abc</td>
+						<td><p id="datetime"></p></td>
+						<td>Students</td>
+					  </tr>
+					  <tr>
+						<td>3</td>
+						<td>ccd</td>
+						<td><p id="datetime"></p></td>
+						<td>dcode</td>
+					  </tr>
+					</tbody>
+				  </table>
 			  </section>
 			</section>
 
@@ -140,7 +170,11 @@
 
 	</section>
 	<!-- CONTENT -->
-
+	<script>
+		var now = new Date();
+		var datetime = now.toLocaleString();
+		document.getElementById("datetime").innerHTML = datetime;
+	  </script>
 
 	<script src="assets/script/script.js"></script>
 
