@@ -169,8 +169,8 @@
 						</tr>
 						<tr>
 							<td>1</td>
-							<td><input type="radio" name="absent" id="absent"> Absent
-								<input type="radio" name="absent" id="present"> Present
+							<td><input type="checkbox" name="absent" id="absent"> Absent
+								<input type="checkbox" name="absent" id="present"> Present
 							</td>
 							<td>Second Year</td>
 							<td>Regular</td>
@@ -181,8 +181,8 @@
 						<tr>
 							<td>1</td>
 							<td>
-								<input type="radio" name="absent" id="absent"> <span>Absent</span>
-								<input type="radio" name="absent" id="present"> Present
+								<input type="checkbox" name="absent" id="absent"> <span>Absent</span>
+								<input type="checkbox" name="absent" id="present"> Present
 							</td>
 							<td>Second Year</td>
 							<td>Regular</td>
@@ -191,8 +191,8 @@
 						</tr>
 						<tr>
 							<td>1</td>
-							<td><input type="radio" name="absent" id="absent"> Absent
-								<input type="radio" name="absent" id="present"> Present
+							<td><input type="checkbox" name="absent" id="absent"> Absent
+								<input type="checkbox" name="absent" id="present"> Present
 							</td>
 							<td>Second Year</td>
 							<td>Regular</td>
@@ -201,8 +201,8 @@
 						</tr>
 						<tr>
 							<td>1</td>
-							<td><input type="radio" name="absent" id="absent"> Absent
-								<input type="radio" name="absent" id="present"> Present
+							<td><input type="checkbox" name="absent" id="absent"> Absent
+								<input type="checkbox" name="absent" id="present"> Present
 							</td>
 							<td>Second Year</td>
 							<td>Regular</td>
@@ -211,8 +211,8 @@
 						</tr>
 						<tr>
 							<td>1</td>
-							<td><input type="radio" name="absent" id="absent"> Absent
-								<input type="radio" name="absent" id="present"> Present
+							<td><input type="checkbox" name="absent" id="absent"> Absent
+								<input type="checkbox" name="absent" id="present"> Present
 							</td>
 							<td>Second Year</td>
 							<td>Regular</td>
@@ -221,8 +221,8 @@
 						</tr>
 						<tr>
 							<td>1</td>
-							<td><input type="radio" name="absent" id="absent"> Absent
-								<input type="radio" name="absent" id="present"> Present
+							<td><input type="checkbox" name="absent" id="absent"> Absent
+								<input type="checkbox" name="absent" id="present"> Present
 							</td>
 							<td>Second Year</td>
 							<td>Regular</td>
@@ -231,8 +231,8 @@
 						</tr>
 						<tr>
 							<td>1</td>
-							<td><input type="radio" name="absent" id="absent"> Absent
-								<input type="radio" name="absent" id="present"> Present
+							<td><input type="checkbox" name="absent" id="absent"> Absent
+								<input type="checkbox" name="absent" id="present"> Present
 							</td>
 							<td>Second Year</td>
 							<td>Regular</td>
@@ -241,8 +241,8 @@
 						</tr>
 						<tr>
 							<td>1</td>
-							<td><input type="radio" name="absent" id="absent"> Absent
-								<input type="radio" name="absent" id="present"> Present
+							<td><input type="checkbox" name="absent" id="absent"> Absent
+								<input type="checkbox" name="absent" id="present"> Present
 							</td>
 							<td>Second Year</td>
 							<td>Regular</td>
@@ -251,8 +251,8 @@
 						</tr>
 						<tr>
 							<td>1</td>
-							<td><input type="radio" name="absent" id="absent"> Absent
-								<input type="radio" name="absent" id="present"> Present
+							<td><input type="checkbox" name="absent" id="absent"> Absent
+								<input type="checkbox" name="absent" id="present"> Present
 							</td>
 							<td>Second Year</td>
 							<td>Regular</td>
@@ -261,8 +261,8 @@
 						</tr>
 						<tr>
 							<td>1</td>
-							<td><input type="radio" name="absent" id="absent"> Absent
-								<input type="radio" name="absent" id="present"> Present
+							<td><input type="checkbox" name="absent" id="absent"> Absent
+								<input type="checkbox" name="absent" id="present"> Present
 							</td>
 							<td>Second Year</td>
 							<td>Regular</td>
@@ -285,6 +285,33 @@
 
 
 	<script src="assets/script/script.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			// Get all table rows
+			var rows = document.querySelectorAll("table tr");
+	
+			// Loop through each row
+			rows.forEach(function (row) {
+				// Get checkboxes within the current row
+				var checkboxes = row.querySelectorAll('input[type="checkbox"]');
+				
+				// Add event listener to each checkbox in the row
+				checkboxes.forEach(function (checkbox) {
+					checkbox.addEventListener("change", function () {
+						// If the checkbox is checked, uncheck other checkboxes in the row
+						if (this.checked) {
+							checkboxes.forEach(function (cb) {
+								if (cb !== checkbox) {
+									cb.checked = false;
+								}
+							});
+						}
+					});
+				});
+			});
+		});
+	</script>
+	
 
 </body>
 
