@@ -136,28 +136,76 @@
 				<h2>Attendance Search</h2>
 				<div class="container">
 					<form action="/submit_form" method="post">
-
 						<div class="row">
 							<div class="column">
-								<label for="div">Name:</label>
+								<label for="load_type"> <b>Load Type:</b> Theory</label>
+								
+							</div>
+							<div class="column">
+								<label for="year"> <b>Teacher Name:</b> xyzd</label>
+								<!-- <input type="text" id="year" name="year" required> -->
+							</div>
+							
+						</div>
+						<div class="row">
+							<div class="column">
+								<label for="div">Division:</label>
 								<input type="text" id="div" name="div" required>
 							</div>
 							<div class="column">
-								<label for="course">Roll No.:</label>
-								<input type="text" id="course" name="course" required>
+								<label for="batch">Select Batch:</label>
+								<select id="batch" name="batch" required>
+									<option value=""> Batch</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="all">All</option>
+								</select>
 							</div>
 							<div class="column">
-								<label for="batch">Date:</label>
-								<input type="date" id="batch" name="batch" required>
+								<label for="course">Department:</label>
+								<select id="course" name="course">
+									<option value="">Select Department</option>
+									<option value="Computer">Computer</option>
+									<option value="IT">IT</option>
+									<option value="EnTC">EnTC</option>
+									<option value="Civil">Civil</option>
+									<option value="Mechanical">Mechanical</option>
+								</select>
 							</div>
-
 						</div>
-						<button type="submit" class="search-button">Search</button>
-						<!-- <button type="submit" class="search-button">Download data</button>  -->
+						<div class="row">
+							<div class="column">
+								<label for="from_time">From:</label>
+								<select id="from_time" name="from_time">
+									<option value="">Select Time</option>
+									<option value="09:15 am">09:15 am</option>
+									<option value="10:15 am">10:15 am</option>
+									<option value="12:00 pm">12:00 pm</option>
+									<option value="01:00 pm">01:00 pm</option>
+									<option value="02:15 pm">02:15 pm</option>
+									<option value="03:15 pm">03:15 pm</option>
+								</select>
+							</div>
+							<div class="column">
+								<label for="to_time">To:</label>
+								<select id="to_time" name="to_time">
+									<option value="">Select Time</option>
+									<option value="10:15 am">10:15 am</option>
+									<option value="11:15 am">11:15 am</option>
+									<option value="01:00 pm">01:00 pm</option>
+									<option value="02:00 pm">02:00 pm</option>
+									<option value="03:15 pm">03:15 pm</option>
+									<option value="04:15 pm">04:15 pm</option>
+								</select>
+							</div>
+						</div>         
 					</form>
-
-				</div>
+		  
+			</div>
 				<div class="card">
+					<button id="checkAllButton">Check All</button>
+    <button id="uncheckAllButton">Uncheck All</button>
 					<table>
 						<tr>
 							<th>Roll No.</th>
@@ -308,6 +356,22 @@
 						}
 					});
 				});
+			});
+		});
+	</script>
+	<script>
+		// JavaScript code to handle Check All and Uncheck All buttons
+		document.getElementById('checkAllButton').addEventListener('click', function() {
+			var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+			checkboxes.forEach(function(checkbox) {
+				checkbox.checked = true;
+			});
+		});
+	
+		document.getElementById('uncheckAllButton').addEventListener('click', function() {
+			var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+			checkboxes.forEach(function(checkbox) {
+				checkbox.checked = false;
 			});
 		});
 	</script>
