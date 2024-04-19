@@ -99,21 +99,12 @@ button {
     color: #ffffff; 
     border: none;
     padding: 10px 20px; 
-    margin-left: 10px;
+    /* margin-left: 10px; */
     cursor: pointer;
     transition: background-color 0.3s ease; 
     border-radius: 5px;
 }
-.attendance-button{
-    background-color: #007bff; 
-    color: #ffffff; 
-    border: none;
-    padding: 10px 20px; 
-    margin-left: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease; 
-    border-radius: 5px;
-}
+
 .view {
     display: flex;
     margin: auto;
