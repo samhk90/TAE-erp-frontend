@@ -64,6 +64,9 @@ body {
 	align-items: center;
 	justify-content: center;
 }
+.brand .text img{
+	margin-top: 20px;
+}
 #sidebar .side-menu {
 	width: 100%;
 	margin-top: 48px;

@@ -19,19 +19,25 @@
 	<!-- SIDEBAR -->
 	<section id="sidebar">
 		<a href="#" class="brand">
-			<span class="text">TAE</span>
+			<span class="text"><img src="/assets/img/tae-logo.png" height="100px" alt=""></span>
 		</a>
 		<ul class="side-menu top">
 			<li class="active">
-				<a href="index.html">
+				<a href="pindex.html">
 					<i class='bx bxs-dashboard'></i>
 					<span class="text">Dashboard</span>
 				</a>
 			</li>
 			<li>
-				<a href="academics.html">
+				<a href="pacademics.html">
 					<i class='bx bxs-calendar-star'></i>
 					<span class="text">Academics</span>
+				</a>
+			</li>
+			<li>
+				<a href="pacademics.html">
+					<i class='bx bxs-calendar-star'></i>
+					<span class="text">Staff Members</span>
 				</a>
 			</li>
 			<li>
@@ -133,41 +139,74 @@
 				</div>
 			</div>
 			<section class="main-course">
-				<h1>My Subjects</h1>
+				
 				<div class="course-box">
-					<ul>
+					
+					<div class="course">
+						<div class="box">
+							<div>
+							<h3>Computer Department</h3>
+							<p>Second Year (3<sup style="text-transform: lowercase;">rd</sup> Semester)</p>
+							<p>8 lectures conducted</p>
+							<a href="pacademics copy.html"><button>Check</button></a> 
+						</div>
 						
-						<li > <a href="academics.html">Second Year</a> </li>
-						<li class="active"> <a href="academics_te.html">Third Year</a> </li>
+						</div>
+						<div class="box">
+							<div>
+							<h3>IT Department</h3>
+							<p>Second Year (3<sup style="text-transform: lowercase;">rd</sup> Semester)</p>
+							<p>8 lectures conducted</p>
+							<a href="pacademics copy.html"><button>Check</button></a> 
 						
-						<li>  <a href="academics_be.html">Final Year</a> </li>
-					  </ul>
-				  <div class="course">
-					<div class="box">
-					  <h3>HTML</h3>
-					  <!-- <p>8 lectures conducted</p>
-					  <button>See Attendance</button>
-					  <i class="fab fa-html5 html"></i>
+						</div>
+						
+						</div>
+						<div class="box">
+							<div>
+							<h3>ENTC Department</h3>
+							<p>Second Year (3<sup style="text-transform: lowercase;">rd</sup> Semester)</p>
+							<p>8 lectures conducted</p>
+							<a href="pacademics copy.html"><button>Check</button></a> 
+						
+						</div>
+						
+						</div>
+						<div class="box">
+							<div>
+							<h3>Mechanical Department</h3>
+							<p>Second Year (3<sup style="text-transform: lowercase;">rd</sup> Semester)</p>
+							<p>8 lectures conducted</p>
+							<a href="pacademics copy.html"><button>Check</button></a> 
+						
+						</div>
+						
+						</div>
+						
+						<div class="box">
+							<div>
+							<h3>Civil Department</h3>
+							<p>Second Year (3<sup style="text-transform: lowercase;">rd</sup> Semester)</p>
+							<p>8 lectures conducted</p>
+							<a href="pacademics copy.html"><button>Check</button></a> 
+						</div>
+						
+						</div>
+						<div class="box">
+							<div>
+							<h3>MCA Department</h3>
+							<p>Second Year (3<sup style="text-transform: lowercase;">rd</sup> Semester)</p>
+							<p>8 lectures conducted</p>
+							<a href="pacademics copy.html"><button>Check</button></a> 
+								
+						</div>
+						
+						</div>
 					</div>
-					<div class="box">
-					  <h3>CSS</h3> -->
-					  <p>Third Year (5<sup style="text-transform: lowercase;">th</sup> Semester)</p>
-					  <p>5 lectures conducted</p>
-					  <a href="attendance_form.html">  <button> See Attendance </button></a>
-					  <i class="fab fa-css3-alt css"></i>
-					</div>
-					<div class="box">
-					  <h3>Practical Labs</h3>
-					  <p>Second Year (4<sup style="text-transform: lowercase;">th</sup> Semester)</p>
-					  <p>3 labs conducted</p>
-					  <a href="attendance_form.html">  <button> See Attendance </button></a>
-					  <i class="fab fa-js-square js"></i>
-					</div>
-				  </div>
 				</div>
-			  </section>
-			</section>
+				<div class="add"></div>
 
+			</section>
 			<style>
 				/* Courses */
 .main-course{
@@ -175,13 +214,12 @@
   text-transform: capitalize;
 }
 .course-box{
-  width: 100%;
-  height: 300px;
   padding: 10px 10px 30px 10px;
   margin-top: 10px;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+ 
 }
 a{
 	color: black;
@@ -189,6 +227,7 @@ a{
 .course-box ul{
   list-style: none;
   display: flex;
+  
 }
 .course-box ul li{
   margin: 10px;
@@ -200,52 +239,60 @@ a{
   border-bottom: 1px solid #000;
 }
 .course-box .course{
-  display: flex;
+	display: grid;
+   grid-template-columns: repeat(3,1fr);
 }
 .box{
-  width: 33%;
+  /* width: 33%; */
   padding: 10px;
-  margin: 10px;
+  margin: 15px;
   border-radius: 10px;
   background: rgb(235, 233, 233);
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.sec{
+	padding-left: 50px;
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+}
+.box{
+	display: flex;
+	grid-template-columns: repeat(2,1fr);
 }
 .box p{
   font-size: 12px;
   margin-top: 5px;
 }
 .box button{
-  background: #000;
+  background: #044aecb7;
   border: none;
   color: #fff;
   padding: 7px 10px;
   border-radius: 10px;
-  margin-top: 3rem;
+  margin-top: 1rem;
   cursor: pointer;
 }
 .box button:hover{
-  background: rgba(0, 0, 0, 0.842);
+  background: rgba(4, 61, 207, 0.514);
+  transition: all 0.3s ease;
 }
-.box i{
+.box img{
   font-size: 7rem;
   float: right;
   margin: -20px 20px 20px 0;
 }
-.html{
-  color: rgb(25, 94, 54);
-}
-.css{
-  color: rgb(104, 179, 35);
-}
-.js{
-  color: rgb(28, 98, 179);
-}
+
 			</style>
-			
-		</main>	
+	</section>
+
+
+	</main>
 
 	</section>
 	<!-- CONTENT -->
+	
 
 
 	<script src="assets/script/script.js"></script>

@@ -19,7 +19,7 @@
 	<!-- SIDEBAR -->
 	<section id="sidebar">
 		<a href="#" class="brand">
-			<span class="text">TAE</span>
+			<span class="text"><img src="/assets/img/tae-logo.png" height="100px" alt=""></span>
 		</a>
 		<ul class="side-menu top">
 			<li class="active">
@@ -142,52 +142,97 @@
 					</ul>
 					<div class="course">
 						<div class="box">
+							<div>
 							<h3>Java</h3>
 							<p>Second Year (3<sup style="text-transform: lowercase;">rd</sup> Semester)</p>
 							<p>8 lectures conducted</p>
 
 							<a href="attendance_form.html"> <button> See Attendance </button></a>
-							<img src="assets/img/java.png" alt="">
-						</div>
-						<div class="box">
-							<h3>C++</h3>
-							<p>Second Year (4<sup style="text-transform: lowercase;">th</sup> Semester)</p>
-							<p>5 lectures conducted</p>
-
-							<a href="attendance_form.html"> <button> See Attendance </button></a>
-							<img src="assets/img/c++.png" alt="">
-						</div>
-						<div class="box">
-							<h3>C++</h3>
-							<p>Second Year (4<sup style="text-transform: lowercase;">th</sup> Semester)</p>
-							<p>5 lectures conducted</p>
-
-							<a href="attendance_form.html"> <button> See Attendance </button></a>
-							<img src="assets/img/c++.png" alt="">
-						</div>
-						<div class="box">
-							<h3>C++</h3>
-							<p>Second Year (4<sup style="text-transform: lowercase;">th</sup> Semester)</p>
-							<p>5 lectures conducted</p>
-
-							<a href="attendance_form.html"> <button> See Attendance </button></a>
-							<img src="assets/img/c++.png" alt="">
 						</div>
 						
-						<div class="box">
-							<h3>Practical Labs</h3>
-							<p>3 labs conducted</p>
-							<p>3 labs conducted</p>
-							<a href="attendance_form.html"> <button> See Attendance </button></a>
-							<img src="assets/img/dsa.png" alt="">
+						<style>
+							#divi{
+								width: 130px;
+								text-align: center;
+								font-size: 17px;
+								border-radius: 4px;
+								border: none;
+							}
+						</style>
+						
+						<div class="sec">
+							<select name="divi" id="divi">
+								<option value="none">None</option>
+								<option value="div_A">Division A</option>
+								<option value="div_B">Division B</option>
+								<option value="div_C">Division C</option>
+								<option value="div_D">Division D</option>
+								<option value="div_E">Division E</option>
+							</select>
+						</div>
 						</div>
 						<div class="box">
-							<h3>Practical Labs</h3>
-							<p>3 labs conducted</p>
-							<p>3 labs conducted</p>
+							<div>
+							<h3>Java</h3>
+							<p>Second Year (3<sup style="text-transform: lowercase;">rd</sup> Semester)</p>
+							<p>8 lectures conducted</p>
+
 							<a href="attendance_form.html"> <button> See Attendance </button></a>
-							<img src="assets/img/dsa.png" alt="">
 						</div>
+						
+						<style>
+							#divi{
+								width: 130px;
+								text-align: center;
+								font-size: 17px;
+								border-radius: 4px;
+								border: none;
+							}
+						</style>
+						
+						<div class="sec">
+							<select name="divi" id="divi">
+								<option value="none">None</option>
+								<option value="div_A">Division A</option>
+								<option value="div_B">Division B</option>
+								<option value="div_C">Division C</option>
+								<option value="div_D">Division D</option>
+								<option value="div_E">Division E</option>
+							</select>
+						</div>
+						</div>
+						<div class="box">
+							<div>
+							<h3>Java</h3>
+							<p>Second Year (3<sup style="text-transform: lowercase;">rd</sup> Semester)</p>
+							<p>8 lectures conducted</p>
+
+							<a href="attendance_form.html"> <button> See Attendance </button></a>
+						</div>
+						
+						<style>
+							#divi{
+								width: 130px;
+								text-align: center;
+								font-size: 17px;
+								border-radius: 4px;
+								border: none;
+							}
+						</style>
+						
+						<div class="sec">
+							<select name="divi" id="divi">
+								<option value="none">None</option>
+								<option value="div_A">Division A</option>
+								<option value="div_B">Division B</option>
+								<option value="div_C">Division C</option>
+								<option value="div_D">Division D</option>
+								<option value="div_E">Division E</option>
+							</select>
+						</div>
+						</div>
+						
+						
 					</div>
 				</div>
 				<div class="add"></div>
@@ -236,6 +281,17 @@ a{
   background: rgb(235, 233, 233);
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
+.sec{
+	padding-left: 50px;
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+}
+.box{
+	display: flex;
+	grid-template-columns: repeat(2,1fr);
+}
 .box p{
   font-size: 12px;
   margin-top: 5px;
@@ -252,14 +308,8 @@ a{
 .box button:hover{
   background: rgba(0, 0, 0, 0.842);
 }
-.box img{
-  font-size: 7rem;
-  float: right;
-  margin: -20px 20px 20px 0;
-}
-img{
-	width: 120px;
-}
+
+
 			</style>
 	</section>
 
