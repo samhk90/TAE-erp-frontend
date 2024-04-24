@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 	<!-- My CSS -->
 	<link rel="stylesheet" href="/assets/style/style.css">
+	<link rel="stylesheet" href="assets/style/formstyle.css">
 	<link rel="stylesheet" href="/assets/style/mac.css">
 	<title>TAE</title>
 </head>
@@ -34,10 +35,11 @@
 					<span class="text">Academics</span>
 				</a>
 			</li>
+			
 			<li>
-				<a href="staffs.html">
+				<a href="logs.html">
 					<i class='bx bxs-calendar-star'></i>
-					<span class="text">Staff Members</span>
+					<span class="text">Daily Logs</span>
 				</a>
 			</li>
 			<li>
@@ -112,8 +114,8 @@
 				<span class="num">8</span>
 			</a>
 
-			<a href="#" class="profile">
-				<img src="/assets/img/user.png">
+			<a href="#" class="profile" >
+				<p>Dr. N.J.Uke</p>	<img src="/assets/img/principal.jpeg">
 			</a>
 		</nav>
 		<!-- NAVBAR -->
@@ -139,72 +141,165 @@
 				</div>
 			</div>
 			<section class="main-course">
-				
-				<div class="course-box">
-					
-					<div class="course">
-						<div class="box">
-							<div>
-							<h3>Computer Department</h3>
-							<p>Second Year (3<sup style="text-transform: lowercase;">rd</sup> Semester)</p>
-							<p>8 lectures conducted</p>
-							<a href="pacademics copy.html"><button>Check</button></a> 
-						</div>
-						
-						</div>
-						<div class="box">
-							<div>
-							<h3>IT Department</h3>
-							<p>Second Year (3<sup style="text-transform: lowercase;">rd</sup> Semester)</p>
-							<p>8 lectures conducted</p>
-							<a href="pacademics copy.html"><button>Check</button></a> 
-						
-						</div>
-						
-						</div>
-						<div class="box">
-							<div>
-							<h3>ENTC Department</h3>
-							<p>Second Year (3<sup style="text-transform: lowercase;">rd</sup> Semester)</p>
-							<p>8 lectures conducted</p>
-							<a href="pacademics copy.html"><button>Check</button></a> 
-						
-						</div>
-						
-						</div>
-						<div class="box">
-							<div>
-							<h3>Mechanical Department</h3>
-							<p>Second Year (3<sup style="text-transform: lowercase;">rd</sup> Semester)</p>
-							<p>8 lectures conducted</p>
-							<a href="pacademics copy.html"><button>Check</button></a> 
-						
-						</div>
-						
-						</div>
-						
-						<div class="box">
-							<div>
-							<h3>Civil Department</h3>
-							<p>Second Year (3<sup style="text-transform: lowercase;">rd</sup> Semester)</p>
-							<p>8 lectures conducted</p>
-							<a href="pacademics copy.html"><button>Check</button></a> 
-						</div>
-						
-						</div>
-						<div class="box">
-							<div>
-							<h3>MCA Department</h3>
-							<p>Second Year (3<sup style="text-transform: lowercase;">rd</sup> Semester)</p>
-							<p>8 lectures conducted</p>
-							<a href="pacademics copy.html"><button>Check</button></a> 
+				<h1>Subjects</h1><div class="container">
+					<div class="card">
+						<h2>Attendance Search</h2>
+						<div class="container">
+							<form action="/submit_form" method="post">
 								
+								<div class="row">
+									<div class="column">
+										<label for="div">Department:</label>
+										<select id="division" name="division" required>
+											<option value=""> None</option>
+											<option value="comp">Computer Eng.</option>
+											<option value="itdept">IT Department</option>
+											<option value="me">Mechanical Department</option>
+											<option value="entc">EnTC Department</option>
+											<option value="civil">Civil Department</option>
+											<option value="all">All</option>
+										</select>
+									</div>
+									<div class="column">
+										<label for="div">Year:</label>
+										<select id="division" name="division" required >
+											<option value=""> None</option>
+											<option value="fe">First year</option>
+											<option value="se">Second Year</option>
+											<option value="te">Third Year</option>
+											<option value="be">Final Year</option>
+											<option value="all">All</option>
+										</select>
+									</div>
+									<div class="column">
+										<label for="div">Division</label>
+										<select id="division" name="division" required >
+											
+											<option value="A">A</option>
+											<option value="B">B</option>
+											<option value="C">C</option>
+											<option value="D">D</option>
+											<option value="E">E</option>
+											<option value="all">All</option>
+										</select>
+									</div>
+									
+									
+
+								<button type="submit" class="attendance-button">Submit</button>
+								
+								</div>         
+							</form>
+				  
+					</div>
+					
+						<div class="card">
+							
+								<div class="search">
+									<input type="sear" placeholder="Search...">
+									<button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+								
+							</div>
+					<style>
+						.search{
+							display: flex;
+							justify-content: end;
+							border: none;
+						}
+						.search input{
+							border: 1px solid grey;
+							border-radius: 8px;
+							outline: none;
+						}
+					</style>
+							<table>
+								<tr>
+									<th>Roll No.</th>
+									<th>Name</th>
+									<th>Attendance</th>
+									<th id="view">  View</th>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>Samee Shaikh</td>
+									<td>100%</td>
+									<td > <a href="" class="view">View</a> </td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>Samee Shaikh</td>
+									<td>100%</td>
+									<td > <a href="" class="view">View</a> </td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>Samee Shaikh</td>
+									<td>100%</td>
+									<td > <a href="" class="view">View</a> </td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>Samee Shaikh</td>
+									<td>100%</td>
+									<td > <a href="" class="view">View</a> </td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>Samee Shaikh</td>
+									<td>100%</td>
+									<td > <a href="" class="view">View</a> </td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>Samee Shaikh</td>
+									<td>100%</td>
+									<td > <a href="" class="view">View</a> </td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>Samee Shaikh</td>
+									<td>100%</td>
+									<td > <a href="" class="view">View</a> </td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>Samee Shaikh</td>
+									<td>100%</td>
+									<td > <a href="" class="view">View</a> </td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>Samee Shaikh</td>
+									<td>100%</td>
+									<td > <a href="" class="view">View</a> </td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>Samee Shaikh</td>
+									<td>100%</td>
+									<td > <a href="" class="view">View</a> </td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>Samee Shaikh</td>
+									<td>100%</td>
+									<td > <a href="" class="view">View</a> </td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>Samee Shaikh</td>
+									<td>100%</td>
+									<td > <a href="" class="view">View</a> </td>
+								</tr>
+		
+								<!-- Add more rows as needed -->
+							</table>
+							
 						</div>
 						
-						</div>
 					</div>
-				</div>
-				<div class="add"></div>
+		  
+			</div>
 
 			</section>
 			<style>
@@ -266,7 +361,7 @@ a{
   margin-top: 5px;
 }
 .box button{
-  background: #044aecb7;
+  background: #044aec;
   border: none;
   color: #fff;
   padding: 7px 10px;
@@ -275,7 +370,7 @@ a{
   cursor: pointer;
 }
 .box button:hover{
-  background: rgba(4, 61, 207, 0.514);
+  background: rgba(4, 61, 207, 0.842);
   transition: all 0.3s ease;
 }
 .box img{
