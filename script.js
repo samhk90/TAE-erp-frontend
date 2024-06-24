@@ -19,7 +19,6 @@ setInterval(() => {
 const css = window.document.styleSheets[0]; 
 
 const stroke = 440 - (440 * (randomNum / 100));
-
 css.insertRule(`
 @keyframes anim {
     100% {

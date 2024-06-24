@@ -9,8 +9,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 	<!-- My CSS -->
 	<link rel="stylesheet" href="/assets/style/style.css">
-	<link rel="stylesheet" href="assets/style/formstyle.css">
-	<link rel="stylesheet" href="/assets/style/mac.css">
+	<link rel="stylesheet" href="assets/style/pacademics.css">
 	<title>TAE</title>
 </head>
 
@@ -115,7 +114,7 @@
 			</a>
 
 			<a href="#" class="profile" >
-				<p>Dr. N.J.Uke</p>	<img src="/assets/img/principal.jpeg">
+				Dr. N.J.Uke<img src="/assets/img/principal.jpeg">
 			</a>
 		</nav>
 		<!-- NAVBAR -->
@@ -141,13 +140,13 @@
 				</div>
 			</div>
 			<section class="main-course">
-				<h1>Subjects</h1><div class="container">
+				<div class="container">
 					<div class="card">
 						<h2>Attendance Search</h2>
 						<div class="container">
 							<form action="/submit_form" method="post">
 								
-								<div class="row">
+								<div class="row" style="width: 100%; display: flex;">
 									<div class="column">
 										<label for="div">Department:</label>
 										<select id="division" name="division" required>
@@ -162,6 +161,11 @@
 									</div>
 									<div class="column">
 										<label for="div">Year:</label>
+										<input type="month" name="year"  placeholder="YYYY" min="1999" max="2050"  id="year">
+										
+									</div>
+									<div class="column">
+										<label for="div">Academic Year:</label>
 										<select id="division" name="division" required >
 											<option value=""> None</option>
 											<option value="fe">First year</option>
@@ -174,7 +178,6 @@
 									<div class="column">
 										<label for="div">Division</label>
 										<select id="division" name="division" required >
-											
 											<option value="A">A</option>
 											<option value="B">B</option>
 											<option value="C">C</option>
@@ -182,36 +185,21 @@
 											<option value="E">E</option>
 											<option value="all">All</option>
 										</select>
+										
 									</div>
+									<button type="submit" class="attendance-button">Submit</button>
 									
-									
-
-								<button type="submit" class="attendance-button">Submit</button>
+								</div>   
 								
-								</div>         
+								
+								      
 							</form>
 				  
 					</div>
 					
 						<div class="card">
-							
-								<div class="search">
-									<input type="sear" placeholder="Search...">
-									<button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
-								
-							</div>
-					<style>
-						.search{
-							display: flex;
-							justify-content: end;
-							border: none;
-						}
-						.search input{
-							border: 1px solid grey;
-							border-radius: 8px;
-							outline: none;
-						}
-					</style>
+						
+					
 							<table>
 								<tr>
 									<th>Roll No.</th>

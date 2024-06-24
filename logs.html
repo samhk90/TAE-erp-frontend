@@ -9,8 +9,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 	<!-- My CSS -->
 	<link rel="stylesheet" href="/assets/style/style.css">
-	<link rel="stylesheet" href="/assets/style/mac.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="dailylog.css">
 	<title>TAE</title>
 </head>
 
@@ -136,7 +135,8 @@
 			   <div class="projects">
 				  <div class="card-header flex">
 					 <h3>Daily record</h3>
-					 <button>See all <i class="uil uil-angle-right"></i></button>
+						
+					 <button id="seeall">See all</button>
 				  </div>
    
 				  <table>
@@ -144,7 +144,19 @@
 						<th>
 						   <tr>
 							  <td>Slots</td>
-							  <td>Department</td>
+							  <td><form action="" class="year" method="post">
+								<label for="Depa
+								rtment">Department</label>
+								<select id="division" name="division" required>
+									<option value=""></option>
+									<option value="comp">Computer Eng.</option>
+									<option value="itdept">IT Department</option>
+									<option value="me">Mechanical Department</option>
+									<option value="entc">EnTC Department</option>
+									<option value="civil">Civil Department</option>
+									<option value="all">All</option>
+								</select>
+							</form></td>
 							  <td>Year</td>
 							  <td>Faculty</td>
 							  <td>Subject</td>
