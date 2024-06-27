@@ -4,13 +4,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/assets/style/progress_bar.css">
 	<!-- Boxicons -->
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 	<!-- My CSS -->
 	<link rel="stylesheet" href="assets/style/style.css">
-	<link rel="stylesheet" href="assets/style/notice.css">
-	<link rel="stylesheet" href="assets/style/noticeform.css">
+	<link rel="stylesheet" href="assets/style/history.css">
+	<!-- <link rel="stylesheet" href="assets/style/progressbar.css"> -->
 	<title>TAE</title>
 </head>
 
@@ -42,26 +43,26 @@
 				</a>
 			</li>
 			<li>
-				<a href="timetable.html">
+				<a href="">
 					<i class='bx bxs-message-dots'></i>
 					<span class="text">Time Table</span>
 				</a>
 			</li>
 			<li>
-				<a href="leaves.html">
+				<a href="">
 					<i class='bx bxs-group'></i>
 					<span class="text">Leaves</span>
 				</a>
 			</li>
 
 			<li>
-				<a href="students.html">
+				<a href="">
 					<i class='bx bxs-group'></i>
 					<span class="text">Student Info</span>
 				</a>
 			</li>
 			<li>
-				<a href="feedback.html">
+				<a href="">
 					<i class='bx bxs-group'></i>
 					<span class="text">Feedback</span>
 				</a>
@@ -110,105 +111,82 @@
 		</nav>
 		<!-- NAVBAR -->
 
-
-		
 		<!-- MAIN -->
 		<main>
 			<div class="head-title">
 				<div class="left">
-					<h1>Notice</h1>
+					<h1>Academics</h1>
 					<ul class="breadcrumb">
 						<li>
-							<a href="#">Notice</a>
+							<a href="#">Academics</a>
 						</li>
 						<li><i class='bx bx-chevron-right'></i></li>
 						<li>
-							<a class="active" href="notices.html">published</a>
+							<a class="active" href="attendance_form.html">Attendance</a>
 						</li>
-						
+						<li><i class='bx bx-chevron-right'></i></li>
+						<li>
+							<a class="active" href="green.html">GreenBook</a>
+						</li>
+						<li><i class='bx bx-chevron-right'></i></li>
+						<li>
+							<a class="active" href="history.html">History</a>
+						</li>
 					</ul>
 				</div>
 			</div>
-			<section class="main-course">
-				
-				<div class="container">
-					<div class="text">Add Notice</div>
-					<form action="#">
-					   <div class="form-row">
-						  <div class="input-data">
-							 <input type="text" required>
-							 <div class="underline"></div>
-							 <label for="">Professor name</label>
-						  </div>
-						  <div class="input-data">
-							 <input type="" required>
-							 <div class="underline"></div>
-							 <label for="">Department</label>
-						  </div>
-					   </div>
-					   <div class="form-row">
-						  <div class="input-data">
-							 <input type="text" required>
-							 <div class="underline"></div>
-							 <label for="">Email Address</label>
-						  </div>
-						  <div class="input-data">
-							 <input type="text" required>
-							 <div class="underline"></div>
-							 <label for="">Notice Title</label>
-						  </div>
-						  
-					   </div>
-					   <div class="form-row">
-						<div class="input-data">
-						   <input type="date" required style="text-align: center;">
-						   <div class="underline"></div>
-						   <label for="">Date</label>
-						</div>
-						<div class="input-data">
-						   <input type="text" required>
-						   <div class="underline"></div>
-						   <label for="">Notice Title</label>
-						</div>
-						
-					 </div>
-					   <div class="form-row">
-						  <div class="input-data textarea">
-							 <textarea rows="8" cols="80" required></textarea>
-							 <br />
-							 <div class="underline"></div>
-							 <label for="">Write your message</label>
-							 <br />
-							 <div class="form-row submit-btn">
-								
-								   
-								   <button type="button" class="sub" onclick="myFunction()">Submit</button>
-								
-							 </div>
-						  </div>
-					   </div>
-					</form>
-				 </div>
+
+            <div class="card">
+                <form action="" class="searchForm" id="searchForm">
+                    <label for="name">Name</label> <input type="text" name="name" id="name">
+                    <label for="email">E-mail</label> <input type="text" name="email" id="email">
+                    <label for="course">Course</label> <input type="text" name="course" id="course">
+                    <button type="submit" class="submit">Submit</button>
+                </form>
+                <section class="main-course">
+                    <table class="content-table" id="contentTable">
+                        <thead>
+                            <tr>
+                                <th>Sr. no.</th>
+                                <th>PRN. no.</th>
+                                <th>Name</th>
+                                <th>E-mail</th>
+                                <th>Contact</th>
+                                <th>Department</th>
+                                <th>Attendance</th>
+                                <th>view</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                   
+                </section>
+            </div>
+
 			
-			  </section>
-			</section>
-		</main>	
+		</main>
+		<!-- MAIN -->
 
 	</section>
 	<!-- CONTENT -->
-	<script>
-		var now = new Date();
-		var datetime = now.toLocaleString();
-		document.getElementById("datetime").innerHTML = datetime;
-	  </script>
-	   <script>
-        function myFunction() {
-          alert("Notice Updated");
-        }
-        </script>
+
 
 	<script src="assets/script/script.js"></script>
-
+	<script src="script.js"></script>
+	<script>
+		const numb = document.querySelector(".numb");
+		let counter = 0;
+		setInterval(() => {
+			if (counter == 100) {
+				clearInterval();
+			} else {
+				counter += 1;
+				numb.textContent = counter + "%";
+			}
+		}, 80);
+	</script>
 </body>
 
 </html>
