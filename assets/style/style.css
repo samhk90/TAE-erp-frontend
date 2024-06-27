@@ -260,7 +260,7 @@ body {
 	gap: 10px;
 }
 #content nav .profile{
-	width: 400px;
+	/* width: 100%; */
 	justify-content: end;
 }
 /* NAVBAR */
