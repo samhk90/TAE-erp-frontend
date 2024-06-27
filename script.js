@@ -1,5 +1,5 @@
 const number = document.getElementById("num");
-
+number.innerHTML = "0%";
 const randomNum = 50;
 
 let counter = 0;
