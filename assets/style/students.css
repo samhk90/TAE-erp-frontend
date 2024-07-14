@@ -1,5 +1,5 @@
 
-.card{
+.card,.card2{
     position: relative;
     width: 97%;
     border-radius: 6px;
@@ -55,7 +55,7 @@ form .fields .input-field{
     margin: 8px 0;
 }
 
-#register{
+#register,#search{
 padding: 5px 10px;
 border: none;
 background-color:#3C91E6 ;
@@ -65,9 +65,42 @@ border-radius: 5px;
 cursor: pointer;
 font-size: 16px;
 }
+#search{
+    margin-left: 20px;
+}
+
+
+.card2 form input{
+    height: 30px;
+    margin-left: 25px;
+}
+
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+
+.card2 form input{
+    border: none;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+.card2 form select{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 0 15px;
+    height: 32px;
+    margin: 8px 0;
+    border-radius: 0px;
+    margin-left: 20px;
+
+
 }
