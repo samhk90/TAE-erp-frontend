@@ -9,7 +9,7 @@
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 	<link rel="stylesheet" href="./assets/style/style.css">
-	<link rel="stylesheet" href="./assets/style/notice.css">
+	<link rel="stylesheet" href="./assets/style/history.css">
 
 	<link rel="stylesheet" href="./assets/style/students.css">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -171,15 +171,15 @@
 
 								<div class="input-field">
 									<label>Student Contact</label>
-									<input type="number" placeholder="Student contact number" required>
+									<input type="number" placeholder="Student contact number" min="0" required>
 								</div>
 								<div class="input-field">
 									<label>Father's Contact No.</label>
-									<input type="number" placeholder="Parent contact number" required>
+									<input type="number" placeholder="Parent contact number" min="0" required>
 								</div>
 								<div class="input-field">
 									<label>Mother's Contact No.</label>
-									<input type="number" placeholder="Parent contact number" required>
+									<input type="number" placeholder="Parent contact number" min="0" required>
 								</div>
 								<div class="input-field">
 									<label>E-mail ID</label>
@@ -560,99 +560,137 @@
 				</form>
 			</div>
 			<div class="card2">
-				<table class="content-table">
-					<thead>
-						<tr>
-							<th>Sr. no.</th>
-							<th>
-Student Name							</th>
-							<th>
-								Department
-							</th>
-							
-							<th>Contact Number</th>
-							<th>Parent Cont. No.</th>
-							<th>
-								Year</th>
-							<th>Attendance</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>1</td>
-							<td>John Doe</td>
-							<td>Computer Science</td>
-							<td>7890123456</td>
-							<td>7890123456</td>
-							<td>BE</td>
-							<td>95%</td>
-						</tr>
-						<tr>
-							<td>2</td>
-							<td>Jane Smith</td>
-							<td>Mechanical Engineering</td>
-							<td>7890123456</td>
-							<td>7890123456</td>
-							<td>FY</td>
-							<td>88%</td>
-						</tr>
-						<tr>
-							<td>3</td>
-							<td>Michael Johnson</td>
-							<td>Electrical Engineering</td>
-							<td>7890123456</td>
-							<td>7890123456</td>
-							<td>TE</td>
-							<td>92%</td>
-						</tr>
-						<tr>
-							<td>4</td>
-							<td>Emily Davis</td>
-							<td>Civil Engineering</td>
-							<td>7890123456</td>
-							<td>7890123456</td>
-							<td>SE</td>
-							<td>85%</td>
-						</tr>
-						<tr>
-							<td>5</td>
-							<td>Chris Lee</td>
-							<td>Mechanical Engineering</td>
-							<td>7890123456</td>
-							<td>7890123456</td>
-							<td>BE</td>
-							<td>90%</td>
-						</tr>
-						<tr>
-							<td>6</td>
-							<td>Amanda Martinez</td>
-							<td>Chemical Engineering</td>
-							<td>7890123456</td>
-							<td>7890123456</td>
-							<td>TY</td>
-							<td>93%</td>
-						</tr>
-						<tr>
-							<td>7</td>
-							<td>David Wilson</td>
-							<td>Mechanical Engineering</td>
-							<td>7890123456</td>
-							<td>7890123457</td>
-							<td>FY</td>
-							<td>89%</td>
-						</tr>
-						<tr>
-							<td>8</td>
-							<td>Sarah Brown</td>
-							<td>IT Engineering</td>
-							<td>7890123456</td>
-							<td>7890123456</td>
-							<td>SY</td>
-							<td>94%</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
+
+				<form action="#">
+					<input type="text" placeholder="Enter PRN No. " required>
+					<input type="text" placeholder="Enter Name " required>
+					<select required>
+						<option disabled selected>Select Department</option>
+						<option>Mechanical Eng.</option>
+						<option>Computer eng.</option>
+						<option>IT Eng.</option>
+						<option>Civil Eng.</option>
+						<option>E&TC Eng.</option>
+						<option>Chemical Eng.</option>
+					</select>
+					<button type="submit" id="search">Search</button>
+					
+
+				</form>
+
+               
+                <section class="main-course">
+					
+                    <table class="content-table" id="contentTable">
+                        <thead>
+                            <tr>
+                                <th>Sr. no.</th>
+                                <th>PRN. no.</th>
+                                <th>Name</th>
+                                <th>E-mail</th>
+                                <th>Contact</th>
+                                <th>Department</th>
+                                <th>Year</th>
+                                <th>Attendance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+							<tr>
+								<td>1</td>
+								<td>3345656776</td>
+								<td>AMIT KUMAR</td>
+								<td>amitkumarr9168@gmail.com</td>
+								<td>916887877676</td>
+								<td>Computer</td>
+								<td>BE</td>
+								<td>89%</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>3345656776</td>
+								<td>AMIT KUMAR</td>
+								<td>amitkumarr9168@gmail.com</td>
+								<td>916887877676</td>
+								<td>Computer</td>
+								<td>BE</td>
+								<td>89%</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>3345656776</td>
+								<td>AMIT KUMAR</td>
+								<td>amitkumarr9168@gmail.com</td>
+								<td>916887877676</td>
+								<td>Computer</td>
+								<td>BE</td>
+								<td>89%</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>3345656776</td>
+								<td>AMIT KUMAR</td>
+								<td>amitkumarr9168@gmail.com</td>
+								<td>916887877676</td>
+								<td>Computer</td>
+								<td>BE</td>
+								<td>89%</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>3345656776</td>
+								<td>AMIT KUMAR</td>
+								<td>amitkumarr9168@gmail.com</td>
+								<td>916887877676</td>
+								<td>Computer</td>
+								<td>BE</td>
+								<td>89%</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>3345656776</td>
+								<td>AMIT KUMAR</td>
+								<td>amitkumarr9168@gmail.com</td>
+								<td>916887877676</td>
+								<td>Computer</td>
+								<td>BE</td>
+								<td>89%</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>3345656776</td>
+								<td>AMIT KUMAR</td>
+								<td>amitkumarr9168@gmail.com</td>
+								<td>916887877676</td>
+								<td>Computer</td>
+								<td>BE</td>
+								<td>89%</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>3345656776</td>
+								<td>AMIT KUMAR</td>
+								<td>amitkumarr9168@gmail.com</td>
+								<td>916887877676</td>
+								<td>Computer</td>
+								<td>BE</td>
+								<td>89%</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>3345656776</td>
+								<td>AMIT KUMAR</td>
+								<td>amitkumarr9168@gmail.com</td>
+								<td>916887877676</td>
+								<td>Computer</td>
+								<td>BE</td>
+								<td>89%</td>
+							</tr>
+
+                        </tbody>
+                    </table>
+                   
+                </section>
+            </div>
 			
 		</main>
 
