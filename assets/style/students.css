@@ -1,5 +1,5 @@
 
-.card{
+.card,.card2{
     position: relative;
     width: 97%;
     border-radius: 6px;
@@ -71,3 +71,52 @@ input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
+
+.card2 select {
+    width: 100%;
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+.card2 select option {
+    color: black;
+}
+.search-input {
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 5px;
+    width: 150px;
+    background-color: transparent;
+    color: white;
+    outline: none; /* Remove the border that appears on focus */
+}
+
+.search-input::placeholder {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.card2 select {
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    appearance: none; 
+    background: transparent;
+    border: none;
+    padding: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    outline: none;
+}
+
+.card2 select {
+    width: 100%;
+}
+ 
