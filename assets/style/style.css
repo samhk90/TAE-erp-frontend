@@ -10,6 +10,7 @@ a {
 	text-decoration: none;
 }
 
+
 li {
 	list-style: none;
 }
@@ -19,6 +20,7 @@ li {
 
 html {
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 body.dark {
@@ -31,6 +33,10 @@ body {
 	background: #eee;
 	overflow-x: hidden;
 }
+
+
+
+
 
 
 
@@ -308,28 +314,27 @@ body {
 }
 
 
-
-
 #content main .box-info {
 	display: grid;
 	grid-template-columns: repeat(3, minmax(100px, 1fr));
-	grid-gap: 28px;
+	grid-gap: 22px;
 	margin-top: 15px;
 }
+
 #content main .box-info li {
-	padding: 15px;
+	padding: 10px;
 	background: #F9F9F9;
-	border-radius: 20px;
-	/* display: flex; */
+	border-radius: 16px;
 	align-items: center;
 	justify-content: center;
-	grid-gap: 80px;
+	grid-gap: 8px;
+	height: 335px; 
+	overflow-y: auto;
 }
-
-.details{
+.details {
 	display: grid;
 	gap: 10px;
-
+	max-height: 100%;
 }
 .info{
 	display: flex;
@@ -342,22 +347,22 @@ body {
 	/* border-radius: ; */
 }
 .details .date{
-	font-size: 10px;
+	font-size: 8px;
 }
 .announce{
 	display: grid;
 	gap:10px;
 }
 .announce .info .fas{
-	font-size: 22px;
-	background-color: #00c8ff4f;
+	font-size: 14px;
+	/* background-color: #00c8ff4f; */
 	padding: 5px;
 	border-radius: 5px; 
 	/* rotate: -20deg; */
 	
 }
 .announce .info p{
-	font-size: 10px;
+	font-size: 8px;
 }
 
 .info .user{
@@ -397,5 +402,9 @@ body {
 
 
 
-/* Responsiveness */
+#content main .box-info li::-webkit-scrollbar {
+	width: 2px; 
+}
+
+
 
